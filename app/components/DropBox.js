@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Image from "next/image";
 
 export default function Converter() {
   const [selectedImg, setSelectedImg] = useState(null);
