@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Converter() {
   const [selectedImg, setSelectedImg] = useState(null);
@@ -89,10 +90,12 @@ export default function Converter() {
             >
               {selectedImg && (
                 <div class="w-40 h-40 -mt-12 mb-2 sm:mb-5 rounded-lg overflow-hidden object-cover">
-                  <img
+                  <Image
                     src={selectedImg}
                     alt="Selected"
-                    class="w-full h-full object-cover"
+                    height={100}
+                    width={100}
+                    className="w-full h-full object-cover"
                   />
                   <button onClick={convertImage}>Convert</button>
                 </div>
@@ -197,7 +200,6 @@ export default function Converter() {
           First
         </span>
       </div>
-      {/* OLD  */}
     </div>
   );
 }
