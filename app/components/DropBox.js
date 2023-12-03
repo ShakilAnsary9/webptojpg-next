@@ -90,11 +90,9 @@ export default function Converter() {
             >
               {selectedImg && (
                 <div class="w-40 h-40 -mt-12 mb-2 sm:mb-5 rounded-lg overflow-hidden object-cover">
-                  <Image
+                  <img
                     src={selectedImg}
                     alt="Selected"
-                    height={100}
-                    width={100}
                     className="w-full h-full object-cover"
                   />
                   <button onClick={convertImage}>Convert</button>
